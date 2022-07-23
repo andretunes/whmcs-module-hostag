@@ -6,6 +6,7 @@ Start selling HostAG services with this module!
 
 # Screenshots
 ![Overview](Screenshots/Overview.gif)
+![rDNS](Screenshots/rDNS.gif)
 
 # Install
 1. Upload the `modules` folder to your WHMCS Installation;
