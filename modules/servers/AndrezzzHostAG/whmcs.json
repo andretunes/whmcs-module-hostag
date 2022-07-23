@@ -1,0 +1,27 @@
+{
+    "schema": "1.0",
+    "type": "whmcs-servers",
+    "name": "AndrezzzHostAG",
+    "license": "MIT",
+    "category": "provisioning",
+    "description": {
+        "name": "Andrezzz - HostAG",
+        "tagline": "Start selling HostAG Services automatically!"
+    },
+    "logo": {
+        "filename": "logo.png"
+    },
+    "support": {
+        "homepage": "https:\/\/www.andrezzz.pt\/",
+        "learn_more": "https:\/\/www.andrezzz.pt\/",
+        "email": "andreantunes@andrezzz.pt",
+        "support_url": "https:\/\/github.com\/andretunes\/whmcs-module-HostAG\/issues",
+        "docs_url": "https:\/\/github.com\/andretunes\/whmcs-module-HostAG\/"
+    },
+    "authors": [
+        {
+            "name": "Andrezzz",
+            "homepage": "https:\/\/www.andrezzz.pt\/"
+        }
+    ]
+}
