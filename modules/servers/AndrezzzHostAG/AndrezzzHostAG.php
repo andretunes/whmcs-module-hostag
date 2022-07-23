@@ -237,7 +237,7 @@ function AndrezzzHostAG_API(array $params) {
 
     if (isset($responseData['status']) && $responseData['status'] === 0) throw new Exception($responseData['result']);
 
-    return $responseData['result'];
+    return ($params['api']) ? $responseData : $responseData['result'];
 }
 
 function AndrezzzHostAG_Error($func, $params, Exception $err) {
@@ -576,9 +576,9 @@ function AndrezzzHostAG_ClientAreaAPI(array $params) {
                 $params[$key] = $value;
             }
 
+            $params['api'] = true;
             $params['action'] = $action;
-            $result = AndrezzzHostAG_API($params);
-            $results = array_merge($results, array('result' => $result));
+            $results = AndrezzzHostAG_API($params);
 
             return array('jsonResponse' => $results);
         } else {
@@ -586,7 +586,7 @@ function AndrezzzHostAG_ClientAreaAPI(array $params) {
         }
     } catch(Exception $err) {
         AndrezzzHostAG_Error(__FUNCTION__, $params, $err);
-        return array('jsonResponse' => array('result' => 'error', 'message' => $err->getMessage()));
+        return array('jsonResponse' => array('status' => 0, 'result' => $err->getMessage()));
     }
 }
 

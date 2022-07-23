@@ -449,13 +449,14 @@
         
         WHMCS.http.jqClient.post('clientarea.php?action=productdetails&id={$serviceid}&modop=custom&a=ClientAreaAPI&api=' + action, json,
             function(data) {
-                if (data.status === 'success') {
+                if (data.status === 1) {
                     switch (action) {
 						case 'Reinstall':
                             window.location.reload();
 							break;
 
 						case 'IPs':
+                            $('#rdnsIP').empty();
                             const select = $_('rdnsIP');
 
                             for (var i = 0; i < data.result.length; i++) {
@@ -843,7 +844,7 @@
                         </div>
                     </div>
 
-                    <button onclick="AndrezzzHostAG_API('Reverse DNS', true, { ip: $_('rdnsIP').value, reversedns: $_('rdnsReverse').value });" class="submit-btn">Add Reverse DNS</button>
+                    <button onclick="AndrezzzHostAG_API('ReverseDNS', true, { ip: $_('rdnsIP').value, reversedns: $_('rdnsReverse').value });" class="submit-btn">Add Reverse DNS</button>
                 </div>
             </div>
         </div>
