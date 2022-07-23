@@ -694,18 +694,18 @@
         <div class="col-md-12 mb-6">
             <div class="border p-2">
                 <div class="row w-100">
-                    <div class="col-3 without-mb text-center" tooltip="Start the Server" data-original-title="" title="">
+                    <div class="col-4 without-mb text-center" tooltip="Start the Server" data-original-title="" title="">
                         <a onclick="AndrezzzHostAG_API('PowerUp');"><i class="fa fa-play start mr-2" aria-hidden="true"></i></a>
                     </div>
-                    <div class="col-3 without-mb text-center" tooltip="Stop the Server" data-original-title="" title="">
+                    <div class="col-4 without-mb text-center" tooltip="Stop the Server" data-original-title="" title="">
                         <a onclick="AndrezzzHostAG_API('PowerDown');"><i class="fa fa-stop stop mr-2" aria-hidden="true"></i></a>
                     </div>
-                    <div class="col-3 without-mb text-center" tooltip="Reboot the Server" data-original-title="" title="">
+                    <div class="col-4 without-mb text-center" tooltip="Reboot the Server" data-original-title="" title="">
                         <a onclick="AndrezzzHostAG_API('Reboot');"><i class="fa fa-sync reboot mr-2" aria-hidden="true"></i></a>
                     </div>
-                    <div class="col-3 without-mb text-center" tooltip="Connect to the Server via KVM" data-original-title="" title="">
+                    {* <div class="col-3 without-mb text-center" tooltip="Connect to the Server via KVM" data-original-title="" title="">
                         <a onclick="AndrezzzHostAG_API('KVM');"><i class="fa fa-terminal kvm mr-2" aria-hidden="true"></i></a>
-                    </div>
+                    </div> *}
                     <div class="col-md-12">
                         <br />
                         <label class="form-label d-inline-block">IPv4:</label>
